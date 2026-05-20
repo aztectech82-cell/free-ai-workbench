@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free AI Workbench | Veteran Fleet Technologies</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --blue: #58a6ff;
+      --green: #3fb950;
+      --orange: #d29922;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    .hero {
+      padding: 80px 24px 60px;
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      background: #1f2d1f;
+      color: var(--green);
+      border: 1px solid #2ea04366;
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+    h1 span { color: var(--blue); }
+    .sub {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto 36px;
+    }
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 12px 26px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary { background: var(--blue); color: #0d1117; }
+    .btn-secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
+    .code-block {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      text-align: left;
+      margin: 50px auto;
+      max-width: 680px;
+    }
+    .code-block p { color: var(--muted); font-size: 13px; margin-bottom: 10px; }
+    .code-block code {
+      display: block;
+      font-family: "Cascadia Code", "Fira Code", monospace;
+      font-size: 14px;
+      color: var(--green);
+      word-break: break-all;
+    }
+    .features {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px;
+    }
+    .card-icon { font-size: 24px; margin-bottom: 10px; }
+    .card h3 { font-size: 16px; margin-bottom: 6px; }
+    .card p { color: var(--muted); font-size: 14px; }
+    .models-section {
+      max-width: 680px;
+      margin: 0 auto 70px;
+      padding: 0 24px;
+    }
+    .models-section h2 { font-size: 1.5rem; margin-bottom: 20px; text-align: center; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--muted); font-weight: 500; }
+    td { padding: 10px 12px; border-bottom: 1px solid #21262d; }
+    tr:last-child td { border-bottom: none; }
+    .tag { background: #1f2d1f; color: var(--green); border-radius: 4px; padding: 2px 6px; font-family: monospace; font-size: 12px; }
+    .who-section {
+      text-align: center;
+      padding: 0 24px 80px;
+    }
+    .who-section h2 { font-size: 1.5rem; margin-bottom: 30px; }
+    .who-grid {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .who-pill {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 30px 24px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    footer a { color: var(--blue); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="badge">Free & Open Source</div>
+    <h1>Run AI on your computer.<br><span>No subscription. No cloud. No cost.</span></h1>
+    <p class="sub">Free AI Workbench gives you a clean, click-first interface for local AI models -- DeepSeek, Qwen, Mistral -- running privately on your own machine.</p>
+    <div class="cta-row">
+      <a href="https://github.com/aztectech82-cell/free-ai-workbench" class="btn btn-primary">Get Started on GitHub</a>
+      <a href="https://github.com/aztectech82-cell/free-ai-workbench#one-command-install" class="btn btn-secondary">View Installer</a>
+    </div>
+  </div>
+
+  <div class="code-block">
+    <p>One-command Windows install -- open PowerShell and run:</p>
+    <code>irm https://raw.githubusercontent.com/aztectech82-cell/free-ai-workbench/main/installer/install-free-ai-workbench.ps1 | iex</code>
+  </div>
+
+  <div class="features">
+    <div class="card">
+      <div class="card-icon">💬</div>
+      <h3>Chat with Local Models</h3>
+      <p>Pick any installed Ollama model. Ask One for a single response or Ask All to compare every model simultaneously.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🖼️</div>
+      <h3>Screenshot Context</h3>
+      <p>Paste a screenshot with Ctrl+V. Ask a vision model what is on screen. Works with Qwen Vision and Moondream.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📁</div>
+      <h3>File Actions</h3>
+      <p>Read, create, edit, or append local files using AI. Your files stay on your machine -- nothing leaves your computer.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🎯</div>
+      <h3>AI Framing Presets</h3>
+      <p>Business, Finance, Engineering, Marketing, Writing, Research, Career, and more. One click loads a purpose-built AI context.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔑</div>
+      <h3>Optional API Keys</h3>
+      <p>Add OpenAI, Anthropic, DeepSeek, or Groq keys anytime. They unlock cloud models when local isn't enough -- but you never need them to start.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🖥️</div>
+      <h3>Desktop Shortcut</h3>
+      <p>The installer creates a desktop shortcut. Double-click to launch. No terminal, no commands, no setup every time.</p>
+    </div>
+  </div>
+
+  <div class="models-section">
+    <h2>Local Models Available</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Tag</th>
+          <th>Best For</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>DeepSeek R1</td><td><span class="tag">deepseek-r1:8b</span></td><td>Reasoning, logic, step-by-step</td></tr>
+        <tr><td>Qwen 3.6</td><td><span class="tag">qwen3.6:latest</span></td><td>General purpose, long context</td></tr>
+        <tr><td>Qwen Coder</td><td><span class="tag">qwen2.5-coder:7b</span></td><td>Code generation & debugging</td></tr>
+        <tr><td>Qwen Vision</td><td><span class="tag">qwen2.5vl:7b</span></td><td>Screenshot & image analysis</td></tr>
+        <tr><td>Mistral</td><td><span class="tag">mistral:latest</span></td><td>Fast general chat</td></tr>
+        <tr><td>Moondream</td><td><span class="tag">moondream:latest</span></td><td>Lightweight vision</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="who-section">
+    <h2>Built for People Who Deserve AI Too</h2>
+    <div class="who-grid">
+      <div class="who-pill">Veterans & Military Families</div>
+      <div class="who-pill">Small Business Owners</div>
+      <div class="who-pill">Students & Learners</div>
+      <div class="who-pill">Builders & Makers</div>
+      <div class="who-pill">Anyone Who Values Privacy</div>
+    </div>
+  </div>
+
+  <footer>
+    Built by <a href="https://github.com/aztectech82-cell">Marcos Alvarez</a> | Veteran Fleet Technologies, LLC | Army Veteran | MBA Candidate<br>
+    <a href="https://github.com/aztectech82-cell/free-ai-workbench">GitHub Repo</a> &nbsp;&middot;&nbsp; MIT License
+  </footer>
+
+</body>
+</html>
