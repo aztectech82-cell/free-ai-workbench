@@ -595,6 +595,15 @@ chat.innerHTML = `
       <div class="welcome-tile"><b>Inspect</b><br>Audit models, files, workspace, and stale pieces to cut.</div>
       <div class="welcome-tile"><b>Build</b><br>Package a Windows MVP for AI learners, families, and veterans.</div>
     </div>
+    <div style="margin-top:14px;padding:12px 14px;background:#1a1208;border:1px solid #5a3e00;border-radius:8px;font-size:12px;line-height:1.6;color:#e3c97a;">
+      <b style="color:#f5a623;">Safety Rules</b> &mdash; Read before sharing this app with anyone:<br>
+      <b>1.</b> Never enter SSNs, passwords, bank numbers, or credentials into the chat.<br>
+      <b>2.</b> By default all messages stay on your computer. Adding a cloud API key sends messages to that provider.<br>
+      <b>3.</b> Do not paste your employer's confidential or proprietary data. You may be under NDA.<br>
+      <b>4.</b> AI output is not legal, medical, or financial advice. Verify before acting on anything important.<br>
+      <b>5.</b> Do not use this app to generate content that harms, deceives, or impersonates others.<br>
+      <span style="color:#aaa;">Full guardrails: <code style="color:#89d185;">docs/SAFETY_AND_GUARDRAILS.md</code></span>
+    </div>
   </div>`;
 
 function esc(s) {
